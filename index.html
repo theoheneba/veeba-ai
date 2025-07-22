@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veeba AI - From Thoughts to Reality | AI Website Generator</title>
+    <meta name="description" content="Transform your ideas into stunning websites with Veeba AI. Revolutionary AI-powered platform that generates complete websites from simple prompts. Coming soon.">
+    <meta name="keywords" content="AI website generator, website builder, artificial intelligence, web development, automated design, Veeba AI">
+    <meta name="author" content="Veeba AI">
+    <meta property="og:title" content="Veeba AI - From Thoughts to Reality">
+    <meta property="og:description" content="Revolutionary AI platform that transforms your ideas into stunning websites. Generate complete websites from simple prompts.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://veeba.ai">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Veeba AI - From Thoughts to Reality">
+    <meta name="twitter:description" content="Revolutionary AI platform that transforms your ideas into stunning websites.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      // Dark mode initialization
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
