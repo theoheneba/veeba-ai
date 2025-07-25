@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Sparkles, Zap, Code } from 'lucide-react';
 import EmailSignup from './EmailSignup';
 import CountdownTimer from './CountdownTimer';

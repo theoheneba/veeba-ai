@@ -15,4 +15,4 @@ export type EmailSubscription = {
   created_at: string;
   subscribed_at: string;
   status: 'active' | 'unsubscribed';
-};
+}

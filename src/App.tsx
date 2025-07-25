@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
-import Hero from './components/Hero';
-import Features from './components/Features';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ParticleBackground from './components/ParticleBackground';
+import HomePage from './pages/HomePage';
+import JobsPage from './pages/JobsPage';
 
 function App() {
   useEffect(() => {
@@ -26,8 +28,13 @@ function App() {
   return (
     <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white font-inter overflow-x-hidden transition-colors duration-300">
       <ParticleBackground />
-      <Hero />
-      <Features />
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/jobs" element={<JobsPage />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
