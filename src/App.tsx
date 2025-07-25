@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import ParticleBackground from './components/ParticleBackground';
 import HomePage from './pages/HomePage';
 import JobsPage from './pages/JobsPage';
+import JobDetailPage from './pages/JobDetailPage';
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/jobs" element={<JobsPage />} />
+          <Route path="/jobs/:id" element={<JobDetailPage />} />
         </Routes>
       </main>
       <Footer />

@@ -16,5 +16,8 @@ export interface JobApplication {
   applicant_name: string;
   applicant_email: string;
   cover_letter: string | null;
+  resume_url?: string | null;
+  github_link?: string | null;
+  linkedin_link?: string | null;
   applied_at?: string;
 }
